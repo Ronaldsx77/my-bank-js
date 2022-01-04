@@ -2,7 +2,7 @@ class Cliente{
     nome;
     cpf;
     fone;
-    endereço;
+    endereco;
     codigo;
 
     criar(){

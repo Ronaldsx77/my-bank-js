@@ -22,7 +22,27 @@ class Conta{
     }
 
     transferir(valor, contaDestino){
+        if (this._saldo < valor || valor <= 0) {
+            return;
+        }
+        if (contaDestino !== contaDestino) {
+            return;
+        }
+        this._saldo -= valor;
+        contaDestino.depositar(valor);
         // Implementar o código do método transferir
+    }
+
+    abrir(){
+
+    }
+
+    fechar(){
+
+    } 
+
+    obterExtrato(){
+        
     }
 }
 
